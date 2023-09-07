@@ -5,7 +5,7 @@ import pretrain_reps
 import train_policy
 
 import os
-# import wget
+import wget
 import importlib
 
 
