@@ -222,7 +222,7 @@ RuntimeError: CUDA error: no kernel image is available for execution on the devi
 -  检查GPU存储容量：```nvidia-smi -q | grep -i 'memory usage' -A 2```
 
 ### 解决问题
--  重新安装CudaToolkit: ```https://developer.nvidia.com/cuda-gpus```
+-  重新安装RTX驱动及CudaToolkit: ```https://developer.nvidia.com/cuda-gpus```
    ```text
    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
    sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600

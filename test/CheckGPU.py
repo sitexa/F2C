@@ -12,3 +12,5 @@ else:
 
 print("##################Check PyTorch#######################")
 print(torch.rand(5, 3))
+
+print(torch.device('cuda:0'))
