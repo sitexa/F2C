@@ -13,7 +13,5 @@ else:
 print("##################Check PyTorch#######################")
 print(torch.rand(5, 3))
 
-print(torch.device('cuda:0'))
 print(torch.cuda.get_device_name(0))
-print(torch.cuda.version)
 
