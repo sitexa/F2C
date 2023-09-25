@@ -83,7 +83,8 @@ def train(config):
     run_num = len(current_num_files)
 
     #### lot_time of log files in log directory
-    log_time = datetime.now().replace(microsecond=0)
+    log_time = str(datetime.now()).split(".")[0].replace(" ","-").replace(":","")
+    print("log_time : " + str(log_time))
 
     #### create new log file for each run
     log_f_name = log_dir + f'/{rl_algorithm}_' + env_name + "_log_" + str(run_num) + "_" + str(log_time) + ".csv"

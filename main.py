@@ -16,7 +16,7 @@ if __name__ == '__main__':
     parser.add_argument("--method", help="method name", default='MVSSM')                                            # Select MVSSM / SLAC / MVTCAE / Vanilla-RL
     parser.add_argument("--missing_view_num", help="# of missing views", default=0, type=int)                       # Select 0 / 1 / 2 / 3 / 4
     parser.add_argument("--seed", help="random seed id", default=0, type=int)                                       # Select 0 / 1 / 2 / 3 / 4
-    parser.add_argument("--use_collected_data", help="skip the data collection process", default=True, type=bool)   # Select True / False
+    parser.add_argument("--use_collected_data", help="skip the data collection process", default=False, type=bool)   # Select True / False
     
     args = parser.parse_args()
     config = vars(args)
